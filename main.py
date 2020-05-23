@@ -22,7 +22,7 @@ computervision_client = ComputerVisionClient(endpoint,CognitiveServicesCredentia
 
 @bot.message_handler(commands=["start"])
 def start_up_message(m):
-    bot.send_message(m.chat.id,"Hello! I am Recycable Bot! Send me a picture of the item in question and I will tell you if it is recycable or not!")
+    bot.send_message(m.chat.id,"Hello! I am an Image Recognition Bot! Send me a picture of the item in question and I will tell you what object is inside with the highest probability!")
 
 
 @bot.message_handler(content_types=["photo"])
